@@ -45,7 +45,6 @@ app.get('/metrics', async (req, res) => {
   res.send(await client.register.metrics());
 });
 
-// Server starten
-app.listen(port, () => {
-  console.log(`Server läuft auf http://localhost:${port}`);
-});
+// ... other routes following the same pattern
+
+module.exports = { app };
