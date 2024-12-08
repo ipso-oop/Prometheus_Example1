@@ -1,5 +1,6 @@
 const express = require('express');
 const client = require('prom-client');
+const basicAuth = require('express-basic-auth');
 
 // Erstelle eine Express-App
 const app = express();
