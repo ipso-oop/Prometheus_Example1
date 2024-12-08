@@ -34,6 +34,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('/metrics', basicAuth({
+    users: { 'admin': 'admin123' }
+}));
+
 // Beispiel-Endpunkt
 app.get('/', (req, res) => {
   res.send('Hello, Prometheus!');
