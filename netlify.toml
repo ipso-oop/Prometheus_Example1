@@ -1,5 +1,5 @@
 [functions]
-  external_node_modules = ["express", "promi-client"]
+  external_node_modules = ["express", "promi-client", "express-basic-auth"]
 
 [[redirects]]
  from = "/*"
